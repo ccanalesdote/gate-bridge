@@ -1,1 +1,0 @@
-export const BRIDGE_CONFIG = 'BRIDGE_CONFIG';
