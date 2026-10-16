@@ -4,6 +4,7 @@ services:
     image: gate-bridge:latest
     container_name: gate-bridge
     restart: unless-stopped
+    network_mode: host
     env_file:
       - stack.env
     volumes:
