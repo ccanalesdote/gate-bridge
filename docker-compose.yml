@@ -1,0 +1,13 @@
+services:
+  bridge:
+    build: .
+    image: gate-bridge:latest
+    container_name: gate-bridge
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - gate_state:/app/state
+
+volumes:
+  gate_state:
